@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Formulário HTML </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+
+        *{ 
+            background-color: black;
+            color: white;
+            margin-left: 10px;
+            font-family: Helvetica;
+            margin: 8px;      
+        }
+
+         input[type=email], 
+         input[type=number],
+         input[type=file], 
+         input[type=text], 
+         select, 
+         textarea  {
+            border: 1px solid #f8e910;
+            width: 400px;
+            padding: 10px;
+        } 
+        .top {
+           display: flex;
+           justify-content: space-between;
+           
+           text-align: center;
+       }
+        h1{
+            -webkit-text-stroke: 2px #0e0d0c !important;
+            letter-spacing: 23px;
+            margin-bottom:40px;
+            font-size: 40px;
+            white-space: pre;
+            
+        }
+        .ins {
+            width: 100px;
+            position: relative;
+            animation: mov  2s;       
+        }
+
+      #ins {animation-timing-function: linear;}
+
+      @keyframes mov {
+        from {left:0px;}
+        to {left: 80px;}
+      }
+
+      footer {
+        position: relative;
+        bottom: 0px;  
+        background-color: rgb(212, 212, 64);   
+      } 
+   
+            @media only screen and (min-width:600px){
+
+        * {
+            background-color: rgb(195, 240, 236);
+            color: black;
+            font-size: 20px;
+        } 
+
+        i {
+            display: none!important;
+        }
+
+        } 
+    
+    </style>
+  </head>
+  <body> 
+    <div class="mae">
+        <div class="top">
+
+            <img class="imagem" style="width: 30px;" src="https://academy.itgest.pt/wp-content/uploads/2021/03/trianglo-amarelo-8.png">
+        
+            <i class="far fa-times-circle"></i>
+        </div>
+   
+    <h1 class="ins" style="text-align: center;">Inscreve-te</h1>  
+    <div>
+        <label for="academia"> Academia a que se está a candidatar*</label> 
+           <br>
+        <select id="academia">
+            <option value="...">---</option>
+            <option value="SAP">SAP HCM Sucess(17 de Maio 2021)</option>
+            <option  value="Dev" disabled>Software Development(Inscrições Fechadas) </option> 
+            <option value="BI">Business Intelligence e Analytics (31 de Maio de 2021) </option>
+        </select> 
+            <!-- o for da lable deve referenciar o id do input (deve ter o mesmo nome) -->
+           <br> <br>
+          <label for="name">Nome e Apelido</label>
+           <br>
+          <input type="text" name="Nome" id="name" placeholder="Nome e apelido"> 
+           <br> <br>
+          <label for="email">Endereço de email</label>
+            <br>
+          <input type="email" name="Email" id="email" placeholder="Endereço de E-mail">
+            <br> <br>   
+          <label for="niver">Data de Nascimento</label> 
+            <br>
+          <input type="date" name="Niver" id="niver">
+            <br> <br>
+          <b>Habilitações Literárias</b> 
+            <br>
+          <input type="checkbox" id="habilitacoes" name="ensinoSecundario">
+          <label for="habilitacoes"> Ensino Secundário </label>
+           <br>
+          <input type="checkbox" id="" name="">
+          <label for="">Licenciatura</label>
+           <br>
+          <input type="checkbox" id="" name="">
+          <label for="">Mestrado</label>
+    </div>
+           <br>
+    <div>
+          <b> Área de formação </b>
+           <br>
+        <input type="checkbox" id="health" name="saude">
+        <label for="health"> Saúde </label>
+           <br>
+        <input type="checkbox" id="tics" name="Informática">
+        <label for="tics"> Informática </label>
+          <br>
+        <input type="checkbox" id="socialServices" name="servicos-sociais">
+        <label for="socialServices"> serviços sociais </label>
+    </div>
+          <br> <br>
+        <label for="endYear"> <b>Ano de Conclusão</b> </label> 
+          <br>
+        <input type="number" name="AnoConclusao" id="endYear" placeholder="Ano de conclusão"> 
+          <br> <br>
+        <label for="endYear"> <b>Motivo da candidatura</b> </label> 
+          <br> 
+        <input type="text" name="Motivocandidatura" id="candidate" placeholder="Motivo da candidatura">
+          <br> <br>
+
+        <label for="HowDoYouKnow"> <b>Como obteve conhecimento da nossa Academia?</b> </label>  <br>
+        <input type="checkbox" id="HowDoYouKnow" name="conhecoalguem">
+        <label for="">conheço alguém</label>
+          <br>
+        <input type="checkbox" id="HowDoYouKnow" name="socialnetwork">
+        <label  for="HowDoYouKnow">Redes sociais </label>
+          <br> <br>
+
+        <label for="CV"> <b>  Upload de CV  </b> </label> <br>
+        <input type="file" name="curriculoVitae" id="CV">
+          <br> <br>
+        <label for="certified"> <b>  Upload do Certificado de Habilitações*  </b> </label> <br>
+        <input type="file" name="certificado" id="certified">
+          <br> <br>
+
+        <label for="doubts"> <b>Deixe aqui as tuas dúvidas e esclareciemntos</b></label> <br>
+        <textarea name="duvidas" id="doubts" cols="50" rows="10" placeholder="Deixa-nos aqui as tuas dúvidas/ pedidos de esclarecimento" ></textarea>
+          <br> <br>
+      
+        <input type="checkbox" id="aproved" name="aprovado">
+        <label for="aproved"><b>Dou o meu consentimento à ITGEST para dar os meus dados pessoais tal como descrito na </b> </label> <a href="https://academy.itgest.pt/politica-de-privacidade" target="_blank">Politica de privacidade</a><br>        
+          <br> 
+        <button type="button" style="background-color: #faeb14; color: black;">Enviar Inscrição</button>
+            <br> <br>
+    </div>
+</body>
+
+  <footer>
+    IT Gest &copy; All Rights Reserved
+  </footer>
+</html>

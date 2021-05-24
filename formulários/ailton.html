@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Formulario de inscrição</title>
+      <meta charset = "utf-8">
+      <img  width = "68" height = "53"
+          src = "https://academy.itgest.pt/wp-content/uploads/2021/03/trianglo-amarelo-8.png"
+          class = "attachment-full size-full" alt = "" loading = "lazy">
+
+      <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+      <!-- CSS -->
+      <style>
+        h1 {
+          color: yellow;
+          text-align: left;
+          font-size : 50px;
+          font-style: italic;
+        }
+
+        text {
+          color: white;
+          font-size : 20px;
+          text-align: left;
+        }
+
+        .exemplo-flex{
+          display: flex;
+        }
+        .exemplo-flex div{
+          width: 20%;
+        }
+
+        .myLabelByClass {
+          text-align: left;
+          padding: 15px;
+        }
+
+        #myLabelById {
+          text-align: left;
+        }
+
+        button {
+          background-color: yellow;
+          text-align: center;
+          font-size: 15px;
+          padding: 10px;
+          width: 300px;
+          cursor: pointer;
+          margin: 2px;
+        }
+
+        button:hover {
+          background-color: teal;
+        }
+
+        select, .myInputByClass, textarea{
+          border-color: yellow;
+          width: 400px;
+          padding: 10px;
+        }
+
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .content {
+          border: 1px solid black;
+          padding: 5px;
+        }
+      </style>
+    </head>
+
+    <body>
+      <div class="container">
+        <br>
+        <h1> Inscreve-te 
+        </h1>
+        <br>
+        <br>
+        <div class="content">
+
+          <div>
+            <label>
+          Academia em que está a se candidatar*
+            </label><br>
+          <select id    = "academia" aria-required = "true" placeholder = "---">
+          <option value = "sap">SAP HCM Success Factors (17 de Maio de 2021)</option>
+          <option value = "dev" disabled>Software Development</option>
+          <option value = "bia">Business Intelligence & Analytics 31 de Maio de 2021</option>
+          </select>
+          </div>
+          <br>
+
+          <div>
+            <label>
+              Nome e Apelido*
+            </label>
+            
+            <br>
+            
+            <input 
+              class="myInputByClass"
+              type="text" 
+              aria-required="true" 
+              placeholder="Nome e Apelido" />
+          </div>
+          
+
+          <br>
+          <div>
+              <label>
+            Endereço de Email*
+              </label><br>
+            <input class = "myInputByClass" type = "text" aria-required = "true" placeholder = "Endereço de Email"/>
+          </div>
+
+          <br>
+          <label> Data de nascimento*</label>
+          <br>
+          <input class = "myInputByClass" type = "date" aria-required = "true"placeholder = "Data de nascimento"/>
+          <br>
+          <br>
+          <div    class = "exemplo-flex">
+          <label1 class = "myLabelByClass"
+                  id    = "myILabelById"> Habilitações Literarias*
+          <br>
+          <input type = "checkbox">
+          <label > Ensino Secundário </label>
+          ​<br>
+          <input type = "checkbox">
+          <label> Licenciatura </label>
+          <br>​
+          <input type = "checkbox"
+          >
+          <label> Mestrado</label>
+          <br>
+          <input type = "checkbox"
+          >
+          <label> Doutoramento</label>
+          <br>
+          <input type = "checkbox">
+          <label> Outro</label>
+          </label1>
+          <br>
+          <br>
+          <label2 class = "myLabelByClass"
+                  id    = "myILabelById" > Área de Formação *
+          <br>
+          <input type = "checkbox">
+          <label > Ciências Sociais e Humanas</label>
+          ​<br>
+          <input type = "checkbox">
+          <label> Ciências Empresariais</label>
+          <br>​
+          <input type = "checkbox"
+          >
+          <label> Gestão/Economia</label>
+          <br>
+          <input type = "checkbox"
+          >
+          <label> Informática</label>
+          <br>
+          <input type = "checkbox"
+          >
+          <label> Informática de Gestão</label>
+          <br>
+          <input type = "checkbox"
+          >
+          <label> Engenharia e técnicas afins</label>
+          <br>
+          <input type = "checkbox"
+          >
+          <label> Contabilidade/Finanças</label>
+
+          <br>
+          <input type = "checkbox"
+          >
+          <label> Saúde</label>
+          <br>
+          <input type = "checkbox"
+          >
+          <label> Serviços Sociais</label>
+          <br>
+          <input type = "checkbox"
+          >
+          <label> Outro</label>
+          </label2>
+          </div>
+          <br>
+          <br>
+          <div>
+          <label>
+          Ano de conclusão*
+          </label>
+          <br>
+          <input class = "myInputByClass" type = "number" aria-required = "true" placeholder = "Ano de conclusão"/>
+          </div>
+          <br>
+          <div>
+          <label>
+          Motivo da candidatura*
+          </label>
+          <br>
+          <input class = "myInputByClass" type = "text" aria-required = "true" placeholder = "Motivo da candidatura"/>
+          </div>
+          <br>
+          <div    class = "exemplo-flex">
+          <label3 class = "myLabelByClass"
+          > Como obteve conhecimento da nossa Academia?*
+          <br> <input
+          type = "checkbox">
+          <label > Conheço alguêm que faz parte do GRUPO ID/ITGEST </label>
+          ​<br>
+          <input
+          type = "checkbox">
+          <label> Redes Sociais (Facebook, instagram ou outro)</label>
+          <br>​
+          <input
+          type = "checkbox"
+          >
+          <label> Linkedin</label>
+          <br>
+          <input
+          type = "checkbox"
+          >
+          <label> Através da faculdade/universidade</label>
+          <br>
+          <input
+          type = "checkbox"
+          >
+          <label> Outro</label>
+          </label3>
+          <br>
+          <br>
+          <label4 class = "myLabelByClass">
+          Upload de CV*
+          <br>
+          <input type = "file">
+          <br>
+          <label>
+          Upload de Certificado de Habilitações*
+          </label>
+          <br>
+          <input type = "file">
+          </label4>
+          </div>
+          <br>
+          <br>
+          <label>Deixa aqui as tuas dúvidas e esclarecimentos</label>
+          <br>
+          <textarea placeholder = "Deixa-nos aqui as tuas duvidas/ pedidos de esclarecimento">
+          </textarea>
+          <br>
+          <br>
+
+          <label>Dou o meu consentimento á ITGest para tratar dos meus dados pessoais tal como descrito na Política de Privacidade </label>
+          <br>
+
+          <button onclick = ""> ENVIAR INSCRIÇÃO
+          </button>
+        </div>
+      </div>
+    </body>
+    </html>

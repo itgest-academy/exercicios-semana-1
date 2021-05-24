@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iTGEST ACADEMY</title>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+  </head>
+
+  <style>
+    body {
+      background-color:#f6f6f2;
+    }
+       
+    h1{
+      font-family: 'Roboto', sans-serif;
+      color: #f6f6f2;
+      font-size:70px;
+      -webkit-text-stroke: 1px; /* Specifies the width and color of strokes for text characters */
+      line-height: 1.2;
+      margin-left:30px;
+      margin-right:30px;
+      margin-top:20px;
+      background-color: #388087;    
+      padding:30px;
+    }
+
+    .pai{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .academia-info{
+      font-family:'Helvetica Neue';
+      color:#388087 ;
+    }
+
+    .habilitacoes{
+      font-family:'Helvetica Neue';
+      color:#388087;
+    }
+
+    .conhecimento{
+      font-family:'Helvetica Neue';
+      color:#388087;
+    }
+
+    .cv{
+      font-family:'Helvetica Neue';
+      color:#388087;
+    }
+
+    .certificado{
+      font-family:'Helvetica Neue';
+      color:#388087;
+      margin-left: 30px;
+    }
+
+    .esclarecimentos{
+      font-family:'Helvetica Neue';
+      color:#388087;
+      margin-top:0px;
+      margin-left: 30px;
+  
+    }
+
+    .consentimento{
+      font-family:'Helvetica Neue';
+      color:#388087;
+      border-style:solid;
+      margin-top:30px;
+      margin-left:30px;
+      margin-right:30px;
+      background-color:#c2edce ;
+    }
+
+    .pai2{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes title {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .inscreve{
+      position: relative;
+      animation-duration: 6s;
+      animation-name: title;
+      display: inline-block;
+    }
+
+    .btn-marianne {   
+        width:400px;
+        border:2px solid #388087;
+        background-color: #388087;
+        color:#f6f6f2;
+        margin-bottom:30px;
+    }
+
+    .div-btn-marianne {
+        display: flex;
+        justify-content: center;
+    }
+  </style>
+  <body>
+
+    <div class="inscreve"> 
+      <h1>INSCREVE-TE</h1> 
+    </div>
+
+    <br><br>
+
+    <div class="pai">
+      <div class="academia-info">
+      <label
+        for="academias-disponiveis">
+        Academia a que se está a candidatar:
+      </label>
+
+      <br>
+
+      <select id="academias-disponiveis">
+        <option value="SAP">SAP HCM Success Factors (17 de Maio 2021)</option>
+        <option value="DEV">Software development</option>
+        <option value="BI&A">Business Intelligence & Analytics (31 de Maio 2021) </option>
+          
+      </select>
+    
+
+      <br><br>
+
+      <label 
+        for="name">
+        Nome e Apelido*
+      </label>
+
+      <br>
+
+      <input 
+        type="text"
+        id="fname"
+        name="fname">
+
+      <br><br>
+
+      <label
+        for="email">
+        Endereço de email*
+      </label>
+
+      <br>
+
+      <input 
+        type="email"
+        id="email"
+        name="email">
+
+      <br><br>
+
+      <label
+        for="date">
+        Data de Nascimento*
+      </label>
+
+      <br>
+
+      <input
+        type="date"
+        id="datadenascimento"
+        name="datadenascimento">
+      </div>
+
+      <br><br>
+
+      <div class="habilitacoes">
+      <label
+        for="habilitacoesliterarias">
+        Habilitações Literárias*
+      </label> 
+
+      <br><br>
+
+      <input 
+        type="checkbox"
+        id="ensinosecundario"
+        name="ensinosecundario">  
+
+      <label
+        for="ensinosecundario">
+        Ensino Secundário
+      </label>   
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="licenciatura"
+        name="licenciatura"> 
+
+      <label
+        for="licenciatura">
+        Licenciatura
+      </label>    
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="mestrado"
+        name="mestrado"> 
+
+      <label
+        for="mestrado">
+        Mestrado
+      </label>    
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="doutoramento"
+        name="doutoramento"> 
+
+      <label
+        for="doutoramento">
+        Doutoramento
+      </label>   
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="outro"
+        name="outro"> 
+
+      <label
+        for="outro">
+        Outro
+      </label>  
+      
+
+      <br><br>
+
+      <label
+        for="areasdeformacao">
+        Áreas de formação*
+      </label>  
+
+      <br><br>
+
+      <input 
+        type="checkbox"
+        id="cienciassociaishumanos"
+        name="cienciassociaishumanos"> 
+
+      <label
+        for="cienciassociaishumanos">
+        Ciências Sociais e Humanos
+      </label>  
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="cienciasempresariais"
+        name="cienciasempresariais"> 
+
+      <label
+        for="cienciasempresariais">
+        Ciências Empresariais
+      </label>  
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="gestaoeconomia"
+        name="gestaoeconomia"> 
+
+      <label
+        for="gestaoeconomia">
+        Gestão/ Economia
+      </label> 
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="informatica"
+        name="informatica"> 
+
+      <label
+        for="informatica">
+        Informática
+      </label> 
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="informaticagestao"
+        name="informaticagestao"> 
+
+      <label
+        for="informaticagestao">
+        Informática de Gestão
+      </label> 
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="engenhariatecnicasafins"
+        name="engenhariatecnicasafins"> 
+
+      <label
+        for="engenhariatecnicasafins">
+        Engenharia e técnicas afins
+      </label> 
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="contabilidadefinancas"
+        name="contabilidadefinancas"> 
+
+      <label
+        for="contabilidadefinancas">
+        Contabilidade/ Finanças
+      </label> 
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="Saude"
+        name="Saude"> 
+
+      <label
+        for="Saude">
+        Saúde
+      </label> 
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="servicossociais"
+        name="servicossociais"> 
+
+      <label
+        for="servicossociais">
+        Serviços Sociais
+      </label> 
+
+      <br>
+
+      <input 
+        type="checkbox"
+        id="outro"
+        name="outro"> 
+
+      <label
+        for="outro">
+        Outro
+      </label>
+     
+
+      <br><br>
+
+  
+
+      </div>
+
+      <br><br>
+
+      <div class="conhecimento">
+
+        
+        <label 
+        for="date">
+        Ano de Conclusão*
+      </label>
+
+      <br>
+
+      <input    
+        type="date" 
+        id="anodeconclusao" 
+        name="anodeconclusao">
+
+      
+
+      <br><br>
+
+    
+
+      <label 
+        for="motivodacandidatura">
+        Motivo da Candidatura*
+      </label>
+
+      <br>
+
+      <input
+        type="text"
+        id="motivodacandidatura"
+        name="motivodacandidatura">
+
+      <br><br>
+
+      <label
+        for="conhecimentodaacademia">
+        Como obteve conhecimento da nossa Academia?*
+      </label>
+
+      <br><br>
+
+      <input 
+        type="checkbox" 
+        id="conhecoalguem1" 
+        name="conhecoalguem1" 
+        value="conhecoalguemquefazpartedogrupoIDITGEST">
+
+      <label
+        for="conhecoalguem">
+        Conheço alguém que faz parte do Grupo ID/ ITGEST
+      </label>
+
+      <br>
+
+      <input 
+        type="checkbox" 
+        id="conhecoalguem2" 
+        name="conhecoalguem2" 
+        value="redessociaisfacebookinstagramououtro">
+
+      <label
+        for="redessociaisfacebookinstagramououtro">
+        Redes Sociais (Facebook, instagram ou outro)
+      </label>
+
+      <br>
+
+      <input 
+        type="checkbox" 
+        id="conhecoalguem3" 
+        name="conhecoalguem3" 
+        value="linkedin">
+
+      <label
+        for="linkedin">
+        Linkedin
+      </label>
+
+      <br>
+
+      <input 
+        type="checkbox" 
+        id="conhecoalguem" 
+        name="conhecoalguem" 
+        value="atravesdafaculdadeuniversidade">
+
+      <label
+        for="conheçoalguem">
+        Através da faculdade/universidade
+      </label>
+
+      <br>
+
+      <input 
+        type="checkbox" 
+        id="conhecoalguem" 
+        name="conhecoalguem" 
+        value="outro">
+
+      <label
+        for="conheçoalguem">
+        Outro
+      </label>
+      </div>
+
+      <br><br>
+    </div>
+
+    <hr>
+
+    <div class="pai2">
+
+
+      <div class="cv">
+      <label
+        for="cv">
+        Upload de CV*
+      </label>
+
+      <br>
+
+      <input
+        type="file"
+        id="cv"
+        name="cv">
+      </div>
+
+      <br><br>
+
+      <div class="certificado">
+      <label
+        for="certificado">
+        Upload de Certificado de Habilitações*
+      </label>
+
+      <br>
+
+      <input
+        type="file"
+        id="certificado"
+        name="certificado">
+      </div>
+
+      <br><br>
+
+      <div class="esclarecimentos">
+      <label
+        for="esclarecimentos">
+        Deixa aqui as tuas dúvidas e esclarecimentos
+      </label>
+
+      <br>
+
+      <textarea 
+        id="esclarecimentos" 
+        name="esclarecimentos" 
+        rows="5" 
+        cols="50">
+        Deixa-nos aqui as tuas dúvidas/pedido de esclarecimento
+      </textarea>
+      </div>
+
+      </div>
+
+      <br><br>
+
+      <div class="consentimento">
+      <input 
+        type="radio"
+        id="consentimento"
+        name="consentimento"
+        value="consentimento">     
+
+      <label
+        for="consentimento">
+        Dou o meu consentimento á ITGest para tratar dos meus dados pessoais tal como descrito na 
+          <a href="https://academy.itgest.pt/politica-de-privacidade" 
+          target="_blank">
+            Política de Privacidade
+          </a>
+      </label> 
+      </div>
+
+      <br><br>
+
+      <div
+        class="div-btn-marianne">
+        <button
+            class="btn-marianne"
+            type="button"> 
+            Enviar Inscrição
+        </button>
+    </div>
+  </body>
+</html>

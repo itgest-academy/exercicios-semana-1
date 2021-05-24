@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="nav-class">
+      <h1>
+        <i class="far fa-user"></i>
+        CADASTRE-SE
+      </h1>
+    </div>
+
+    <br><br>
+
+    <div class="container-class">
+      <div >
+
+        <div class="center-class">
+          <img 
+            src="https://academy.itgest.pt/wp-content/uploads/2021/03/itgest-academy-logo.svg" 
+            alt="Image not found" 
+            width="250" 
+            height="150">
+        </div>
+
+        <div class="group-class">
+
+          <label for="academia">Academia a que se está a candidatar*</label>
+
+          <select id="academia" style="width: 99%;">
+
+            <option class="text-input-class" >---</option>
+
+            <option 
+              class="text-input-class" 
+              value="SAP HCM Success Factors (17 de maio 2021)">
+              SAP HCM Success Factors (17 de maio 2021)
+            </option>
+
+            <option 
+              class="text-input-class"  
+              disabled 
+              value="Software Development (Inscrições Fechadas)">
+              Software Development (Inscrições Fechadas)
+            </option>
+
+            <option 
+              class="text-input-class"  
+              value="Business Intelligence & Analytcs (31 de maio de 2021)">
+              Business Intelligence & Analytcs (31 de maio de 2021)
+            </option>
+
+          </select> 
+        </div>
+
+        <div class="group-class">
+          <label for="apelido"> Nome e Apelido* </label>
+          <input type="text" class="text-input-class"  id="apelido" name="apelido" placeholder="Nome e Apelido">
+        </div>
+
+        <div class="group-class">
+          <label for="email"> Data de Nascimento* </label>
+          <input type="email" id="email" class="text-input-class"  name="email"  placeholder=" Endereço de e-mail">
+        </div>
+  
+        <div class="group-class">
+          <label for="birthday"> Endereço de e-mail* </label>
+          <input type="date" id="birthday" class="text-input-class"  name="birthday">
+        </div>
+
+        <div class="group-class">
+          <label for="password"> Endereço de e-mail* </label>
+          <input type="password" id="password" class="text-input-class"  name="password">
+        </div>
+
+        <div class="group-class">
+          <label for="ano">Ano de Conclusão* </label>
+          <input class="text-input-class"  type="number" id="ano" name="ano" placeholder="Ano de Conclusão">
+        </div>
+    
+        <div class="group-class-1">
+
+          <label for="duvidas">Deixa aqui as tuas dúvidas e esclarecimentos</label>
+          <br>
+          <textarea 
+            id="duvidas" 
+            name="duvidas" 
+            class="text-area-class"
+            rows="10"; 
+            cols="120";
+            placeholder="Deixa aqui as tuas dúvidas e esclarecimentos">
+          </textarea>
+
+        </div>
+
+        <br>
+
+        <div>
+          <h4 
+            class="text-input-class"
+            for="termos"> 
+            Dou o meu consentimento á ITGest para tratar dos meus dados pessoais tal como descrito na 
+            <a href="https://academy.itgest.pt/politica-de-privacidade/" target="_blank">Política de Privacidade</a>
+          </h4>
+
+        </div>
+        
+        <div class="center-class">
+          <button
+            type="button">
+            Enviar Inscrição
+          </button>
+        </div>
+
+      </div>
+  
+    </div>
+          
+  </body>
+
+  <footer>
+  </footer>
+</html>

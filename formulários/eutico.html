@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Inscreve-te</title>
+  </head>
+
+  <style>
+    body {
+      background-color: blueviolet;
+    }
+
+    @media screen and (max-width: 992px) {
+      body {
+        background-color:chocolate;
+        color: #0a0a0a;
+      }
+    }
+
+    div.div-geral{
+      width: 89%;
+      height:100%;
+      margin: 0% auto 0% auto;
+    }
+
+    div#form{
+      border: 10% solid black;
+      padding: 5px;
+      margin: 5px;
+    }
+
+    div.animate{
+      position: fixed;
+      bottom: 5%;
+      right: 5%;
+      width: 200px;
+      margin: 100px;
+      animation-name: animate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
+
+    @media screen and (max-width: 600px) {
+      div.animate {
+        position: fixed;
+        bottom: 0%;
+        right: 0%;
+        width: 100px;
+      }
+    }
+    @keyframes animate {
+        
+        0%   {background-color: red;}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        100% {background-color: green;}
+    }
+  </style>
+
+  <body>
+
+    <img src="trianglo-amarelo-8.png" alt="logo" />
+    <div class="div-geral">
+
+      <h1>Inscreve-te</h1>
+      <div>
+        <form>
+
+          <label for="cursos">Academia a que se está a candidatar*: </label> <br>
+          <select id="form" name="cursos">
+            <option value="SAP HCM SUCESS FACTORES (17 DE MAIO 2021)">
+              SAP HCM SUCESS FACTORES (17 DE MAIO 2021)
+            </option>
+            <option value="Busness inteligence 31 de MAIO 2021">
+              Busness inteligence 31 de MAIO 2021
+            </option>
+          </select> <br>
+
+          <label for="NomeApelido">Nome e Apelido: <br> </label>
+          <input type="text" id="form" name="name"> <br>
+
+          <label for="enderecoEmail">Endereço de email </label> <br>
+          <input type="email" id="form" name="enderecoemail">
+          <br>
+
+          <label for="data de nascimento">data de nascimento</label> <br>
+          <input type="date" id="form" name="data de nascimento"> <br>
+        </form>
+      </div>
+      <section>
+
+        <h3>Hablitação Literaria</h3>
+
+        <input type="checkbox" id="cr1" name="cr1"> <label for="ens"> Ensino Secundário </label> <br>
+
+        <input type="checkbox" id="cr2" name="cr2"> <label for="ens_2"> Licenciatura </label> <br>
+
+        <input type="checkbox" id="cr3" name="cr3"> <label for="cr3"> Mestrado</label> <br>
+
+        <input type="checkbox" id="cr4" name="cr4"> <label for="ens_3"> Doutoramento</label> <br>
+
+        <input type="checkbox" id="cr5" name="cr5"> <label for="cr5"> Outro</label> <br>
+
+        <h3>Area de Formação</h3>
+        <input type="checkbox" id="ciencia" name="ciencia">
+        <label for="Area"> Ciências Sociais e Humanos</label><br>
+
+        <input type="checkbox" id="ciencia2" name="ciencia2">
+        <label for="Area2"> Ciências Empresariais </label><br>
+
+        <input type="checkbox" id="gesec" name="gesec">
+        <label for="Area3"> Gestão/ Economia</label> <br>
+
+        <input type="checkbox" id="inf" name="inf">
+        <label for="Area4">Informática</label> <br>
+
+        <input type="checkbox" id="Outro" name="Outro">
+        <label for="Area5"> Outro</label> <br>
+      </section>
+      <label for="final">Ano de Conclusão:</label> <br> <input type="number" class="form" name="final">
+      <br>
+      <label for="cand">Motivo de Candidatura:</label> <br>
+      <input type="text" class="form" name="cand"> <br>
+
+      <section class="base">
+
+        <h3>Como obteve conhecimento da Nossa Academia</h3>
+
+        <input type="checkbox" id="rede" name="rede">
+        <label for="rede1"> Redes Sociais (Facebook, instagram ou outro)</label><br>
+        <input type="checkbox" id="Linkedin" name="Linkedin">
+        <label for="red2"> Linkedin </label><br>
+        <input type="checkbox" id="Através" name="Através">
+        <label for="red3"> Através da faculdade/universidade</label> <br>
+        <input type="checkbox" id="Outro" name="Outro">
+        <label for="Area5"> Outro</label> <br>
+      </section>
+
+      <div>
+        <label for="files">Upload de Certificado*:</label> <br>
+        <input type="file" id="up" name="files" multiple> <br>
+      </div>
+      <label for="files">Upload CV*:</label> <br>
+      <input type="file" id="upl" name="files" multiple>
+      </form> <br> <br>
+      <textarea name=" Area" class="base" cols="60" rows="20" value="Deixa aqui as tuas dúvidas e esclarecimentos">
+          Deixa aqui as tuas dúvidas e esclarecimentos
+          </textarea> <br>
+      <br>
+      <input type="checkbox" id="Outro" name="Outro">
+      <label for="Area5"> Dou o meu consentimento
+        á ITGest para tratar dos meus dados
+        pessoais tal como descrito na
+        <a href="https://academy.itgest.pt/politica-de-privacidade/" target="_blank"> <strong>Política de Privacidade</strong> </a>
+      </label> <br> <br>
+      <button type="button" onclick="alert('Eviado!')">Enviar A Inscrisão!</button>
+    </div>
+    <div class="animate">
+      <img src="itgest.png" alt="animation">
+    </div>
+  </body>
+</html>

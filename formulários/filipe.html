@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      ItGest Academy
+    </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="utf=8">
+  </head>
+
+  <header>
+    
+  </header>
+
+  <style>
+
+    body {
+      background-color: #000000;
+    }
+
+    /* Includes title and images */
+
+    .title-and-images {
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between; 
+      align-items: center;
+    }
+
+    .image-left {
+      margin-left: 20px;
+      position: relative;
+      animation-name: image;
+      animation-duration: 3s;
+      animation-timing-function: ease-in;
+       
+    }
+
+    .image-right {      
+      transform: rotate(180deg);
+      position: relative;
+      animation-name: image;
+      animation-duration: 3s;
+      animation-timing-function: ease-in;     
+    }
+
+    .text-title {
+      position: relative;
+      animation-duration: 6s;
+      animation-name: text-title;
+      display: inline-block;
+    }
+
+    .text-title, h1 {
+      color:#fbbc00 ;   
+      text-transform: uppercase;  
+      padding: 5px; 
+      font-weight: 600; 
+      font-family: Verdana, sans-serif;
+    }
+
+    /* Animations for images and title */
+
+    @keyframes image {
+      from {
+        transform: rotate(0deg);
+        opacity: 0;
+      }
+      to {
+        transform: rotate(360deg);
+        opacity: 1;
+      }
+    }
+
+    @keyframes text-title {
+      from {        
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Begining of the Form */
+    
+    .registration-form {
+      border: 3px solid black;
+      padding:10px;
+    }
+
+    /* Personal Information  */
+
+    .personal-info {
+      color:black; 
+      padding: 15px;
+      border: 3px solid; 
+      background-color:#ffd147; 
+      font-family: Verdana, sans-serif;
+      box-shadow: 5px 10px;
+    }
+
+    .personal-info, label {
+      font-weight:600; 
+      padding: 15px;
+    }
+
+    /* Nao deu tempo para fazer portanto resto ficou inline */  
+  </style>
+
+  <body>
+    <!-- Title and images -->
+    <div class="title-and-images"> 
+
+      <div>
+        <img width="68" height="53" src="https://academy.itgest.pt/wp-content/uploads/2021/03/trianglo-amarelo-8.png" class="image-left attachment-full size-full" alt="" loading="lazy">
+      </div>
+
+      <div class="text-title">
+        <h1>
+          Inscreve-te na nossa Academia <i class="far fa-smile"></i>
+        </h1>
+      </div>
+
+      <div>
+        <img width="68" height="53" src="https://academy.itgest.pt/wp-content/uploads/2021/03/trianglo-amarelo-8.png" class="image-right attachment-full size-full" alt="" loading="lazy">
+      </div>
+
+    </div>
+
+    <!-- Begining of the Form -->
+    <form class="registration-form">
+
+      <!-- Form : Personal-info     -->
+      <div class="personal-info">
+
+        <!-- Personal-info: Academy -->
+        <label for="Course" >
+          Academia a que se está a candidatar*:
+        </label>
+          
+        <select id="course">          
+          <option value="Sap" >SAP</option>
+          <option value="DEV" disabled>DEV (inscrições encerradas)</option>
+          <option value="Analitycs">Business Analitics</option>                  
+        </select>
+        
+        <br> <br>
+        
+        <!-- Personal-info: Full Name -->
+        <label for="FullName" >
+          Nome e Apelido*:
+        </label>
+        
+        <input type="text " 
+          id="fullName"
+          name="fullName">
+        
+        <br> <br>
+
+        <!-- Personal-info: Email -->
+        <label for="email">
+          Endereço de e-mail*:
+        </label>
+        
+        <input type="email"
+          id="email"
+          name="email">
+        
+        <br> <br>
+
+        <!-- Personal-info: Date -->
+        <label for="datemin">
+          Data de nascimento (>18 anos)*:
+        </label>
+        
+        <input type="date" 
+          id="datemax" 
+          name="datemax" 
+          max="2001-01-01">
+
+      </div>
+
+      <hr> <br>
+
+      <!-- Form: Academic Background -->
+      <div style="color: black; padding: 15px; border: 3px solid ; background-color:#ffd147; box-shadow: 5px 10px;"
+        class="background-info">
+        <!-- Form: Habilitations and checkbox -->
+        <label for="habilitacoes" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;" >
+          Habilitações:
+        </label>
+              
+        <div style="display: flex; margin-top: 10px; padding:15px; font-family: Helvetica, sans-serif; font-size: 18px; ">
+
+          <input type="checkbox"            
+            id="habilitacoes1" 
+            name="habilitacoes1" 
+            value="Ensino Secundário">
+            
+          <label for="habilitacoes1" style="  padding: 1px;">
+            Ensino Secundário
+          </label>
+              
+          <input type="checkbox" 
+            id="habilitacoes2" 
+            name="habilitacoes2" 
+            value="Licenciatura">
+
+          <label for="habilitacoes2" style="  padding: 1px;"> 
+            Licenciatura
+          </label>
+
+          <input type="checkbox" 
+            id="habilitacoes3" 
+            name="habilitacoes3" 
+            value="Mestrado">
+
+          <label for="habilitacoes3" style="  padding: 1px;"> 
+            Mestrado
+          </label>
+          
+          <input type="checkbox" 
+            id="habilitacoes4" 
+            name="habilitacoes4" 
+            value="Doutorament">
+
+          <label for="habilitacoes4" style="  padding: 1px;"> 
+            Doutoramento
+          </label>
+          
+          <input type="checkbox" 
+            id="habilitacoes5" 
+            name="habilitacoes5" 
+            value="Outro">
+
+          <label for="habilitacoes5" style="  padding: 1px;"> 
+            Outro
+          </label>
+
+        </div>
+        <!-- Form: Skills -->
+        <label for="formacao" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
+          Formações:
+        </label>
+
+        <div style="display: flex; margin-top:10px; padding:15px; font-family: Helvetica, sans-serif;  font-size: 18px;">          
+          <input type="checkbox" 
+            id="Formaçao1" 
+            name="Formaçao1" 
+            value="Ciencias Sociais e Humanos">            
+          
+          <label for="Formaçao1" style="  padding: 1px;">
+            Ciencias Sociais e Humanos
+
+          </label>
+
+          <input type="checkbox" 
+            id="Formacao2" 
+            name="Formacao2" 
+            value="Ciencias Empresariais">
+
+          <label for="Formacao2" style="  padding: 1px;"> 
+            Ciencias Empresariais
+          </label>
+
+          <input type="checkbox" 
+            id="Formacao3" 
+            name="Formacao3" 
+            value="Gestao/economia">
+
+          <label for="Formacao3" style="  padding: 1px;"> 
+            Gestao/economia
+          </label>
+          
+          <input type="checkbox" 
+            id="Formacao4" 
+            name="Formacao4" 
+            value="Informatica">
+
+          <label for="Formacao4" style="  padding: 1px;"> 
+            Informatica
+          </label>
+
+          <input type="checkbox" 
+            id="Formacao5" 
+            name="Formacao5" 
+            value="Informatica de Gestao">
+
+          <label for="Formacao5" style="  padding: 1px;"> 
+            Informatica de Gestao
+          </label>
+          
+          <input type="checkbox" 
+            id="Formaçao6" 
+            name="Formaçao6" 
+            value="Engenharia e técnicas afins
+            ">
+
+          <label for="Formaçao1" style="  padding: 1px;">
+            Engenharia e técnicas afins
+          </label>
+
+          <input type="checkbox" 
+            id="Formacao7" 
+            name="Formacao7" 
+            value="Contabilidade/ Finanças">
+
+          <label for="Formacao2" style="  padding: 1px;"> 
+            Contabilidade/ Finanças
+          </label>
+
+          <input type="checkbox" 
+            id="Formacao8" 
+            name="Formacao8" 
+            value="Saúde">
+
+          <label for="Formacao3" style="  padding: 1px;"> 
+            Saúde
+          </label>
+          
+          <input type="checkbox" 
+            id="Formacao9" 
+            name="Formacao9" 
+            value="Serviços Sociais">
+
+          <label for="Formacao4" style="  padding: 1px;"> 
+            Serviços Sociais
+          </label>
+
+          <input type="checkbox" 
+            id="Formacao10" 
+            name="Formacao10" 
+            value="Outro">
+
+          <label for="Formacao5" style="  padding: 1px;"> 
+            Outro
+          </label>
+        </div>
+
+        <!-- Form: graduation year -->
+        <div style="margin-top:15px;">
+          <label for="date" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
+            Ano de Conclusão:
+          </label>
+
+          <input type="number" 
+            id="dateconclusao" 
+            name="dateconclusao"> 
+
+        </div>
+        <!-- Form: reason to apply -->
+        <div style="margin-top:15px; ">
+          <label for="motivo" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
+            Motivo da Candidatura
+          </label>
+
+          <input type="text"
+            id="motivocandidatura"
+            name="motivocandidatura">
+        </div>
+      </div>
+
+      <hr> <br>
+      <!-- Form: how Cv Certificate Comments Politics -->
+      <div style="color: black; padding: 15px; border: 3px solid; background-color:#ffd147; box-shadow: 5px 10px;"> 
+        <!-- Form: knowledge-academy -->
+        <label for="comoConheceAcademia" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
+          Como obteve conhecimento da nossa Academia?*
+        </label>
+        
+        <div style="display: flex; margin-top: 10px; padding:15px; font-family: Helvetica, sans-serif;  font-size: 18px;">
+          <input type="checkbox" 
+            id="ComoConhece1" 
+            name="ComoConhece1" 
+            value="Conheço alguém que faz parte do Grupo ID/ ITGEST">
+                      
+          <label for="ComoConhece1" style="  padding: 1px;">
+            Conheço alguém que faz parte do Grupo ID/ ITGEST
+          </label>
+                    
+          <input type="checkbox" 
+            id="ComoConhece2" 
+            name="ComoConhece2" 
+            value="Redes Sociais (Facebook, instagram ou outro)">
+
+          <label for="ComoConhece2" style="  padding: 1px;"> 
+            Redes Sociais (Facebook, instagram ou outro)
+          </label>
+
+          <input type="checkbox" 
+            id="ComoConhece3" 
+            name="ComoConhece3" 
+            value="Linkedin">
+
+          <label for="ComoConhece3" style="  padding: 1px;"> 
+            Linkedin
+          </label>
+
+          <input type="checkbox" 
+            id="ComoConhece4" 
+            name="ComoConhece4" 
+            value="Através da faculdade/universidade">
+
+          <label for="ComoConhece4" style="  padding: 1px;"> 
+            Através da faculdade/universidade
+          </label>
+
+          <input type="checkbox" 
+            id="ComoConhece5" 
+            name="ComoConhece5" 
+            value="Outro">
+
+          <label for="ComoConhece5" style="  padding: 1px;"> 
+            Outro
+          </label>
+
+        </div>
+
+        <!-- Form: upload cv & certificate -->
+        <div style="display:flex; justify-content: start;">
+          <div style="margin-top: 10px;">
+            <label for="CV" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif; ">
+              Upload de <i>CV</i>:
+            </label> 
+    
+            <input 
+              type="file" 
+              id="CV" 
+              name="CV">
+          </div>
+
+          <div style="margin-top: 10px; margin-left: 80px;">
+            <label for="certificadoHabilitacoes" style="font-weight:600; padding: 15px; font-family: Verdana, sans-serif;">
+              Upload de Certificado de Habilitações*
+            </label>
+            
+            <input type="file"              
+              id="certificadohabilitacoes" 
+              name="certificadohabilitacoes">
+
+          </div>
+
+        </div>
+
+        <!-- Form: textarea -->
+        <div style="margin-top: 10px;">
+
+          <textarea cols="151" 
+            id="info" 
+            name="info" 
+            rows="10" 
+            placeholder="Deixa-nos as tuas dúvidas / pedidos de esclarecimento">          
+          </textarea> 
+        </div>
+
+        <!-- Form: consent -->
+        <div style="margin-top: 10px;">
+          <input type="radio" 
+            id="consent" 
+            name="consent" 
+            value="consentiment">
+
+          <label for="consent" style="font-family: Helvetica, sans-serif;">
+            Dou o meu consentimento á ITGest para tratar dos meus dados pessoais tal como descrito na <a href="https://academy.itgest.pt/politica-de-privacidade/" target="_blank">Política de Privacidade</a>
+          </label>
+        </div>
+      </div>
+
+      <br> <hr>
+
+      <!-- Form: Button to submit -->
+      <div style="color: black; border: 3px solid ; margin-top: 15px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; background-color:#ffd147;">
+
+        <button type="button"
+          onclick="alert(`Entraremos em contacto assim que for possivel`)"
+          style=" box-shadow: 5px 10px; border: 3px solid black; height: 40px;  
+            color: black; text-align: center; font-size: 25px; font-family: Helvetica, sans-serif; background-color:#ffc107;" >
+
+          Enviar Inscrição para futuramente te tornares colaborador da ItGest
+        </button>
+      </div>      
+    </form>
+
+  </body>
+  
+</html>
+ 
+      <!-- <h2> Formandos</h2>
+      <table>
+        <tr>
+          <th>
+            Id 
+          </th>
+
+          <th>
+            Name
+          </th>
+
+          <th>
+            País
+          </th>
+
+        </tr>
+
+        <tr>
+          <td>
+            2
+          </td>
+
+          <td>
+            Cris                     
+          </td>
+            
+          <td>
+            Portugal
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            3
+          </td>
+
+          <td>
+            Eutico                     
+          </td>
+            
+          <td>
+            Israel
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            4 
+          </td>
+
+          <td>
+           Alicia                     
+          </td>
+            
+          <td>
+            Angola
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            5 
+          </td>
+
+          <td>
+           Marianne                     
+          </td>
+            
+          <td>
+            Inglaterra
+          </td>
+        </tr>
+      </table> -->
+
+
+      <!-- <table>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th colspan="2">Phone</th>
+        </tr>
+        <tr>
+          <td>Filipe</td>
+          <td>Filipe@</th>
+          <th >222941221</th>
+          <th >222941221</th>
+        </tr>
+      </table> -->
+     
+      <!-- <button
+      onclick="window.print()">
+        Print this page
+
+      </button> -->
+      <!-- <br> <br> -->
+      <!-- <iframe src="https://www.google.pt" style="height:200px;width:300px;" title="Iframe Example"></iframe> -->
+
+      <!-- <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="600" 
+            height="500" 
+            id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            frameborder="0" 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0">
+          
+          </iframe> -->
+          
+          <!-- <a href="https://putlocker-is.org">
+            putlocker
+          </a> -->
+
+          
+
+          <!-- <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}
+          </style> -->
+
+          <!-- <a href="https://www.embedgooglemap.net">
+            embed a google map
+          </a> -->
+
+          <!-- <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
+          </style> -->
+                
+      <!-- <iframe width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/MmH_lCRBy0I" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      
+      </iframe> -->
+
+      <!-- <a href="#section2"> Aponta para o id section2</a> -->
+      <!-- scroll-behavior: smooth -->
+   

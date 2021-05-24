@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+      
+      body {
+        background-color: rgb(27, 158, 175);
+        padding: 20px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        body {
+          background-color: white;
+        }
+      }
+
+      div img {
+        width: 15%;
+        height: 15%;
+        position: relative;
+        animation-name: imagem;
+        animation-duration: 10s;
+      }
+
+      @keyframes imagem {
+        from {left:0px; top:0px; }
+        to {left:85%; top:0px;}
+      }
+
+      label{
+        font-family:'Lucida Sans Unicode';
+        font-size: 18px;
+      }
+      select{
+        width: 25%;
+        margin-left:0px;
+      }
+
+      i{
+        font-size: 150px;
+      }
+
+      #txt {
+        background-color: #8a8282;
+      }
+    </style>   
+  </head>
+
+  <body>
+    <div class="imagens" >
+      <img src="https://academy.itgest.pt/wp-content/uploads/2021/03/itgest-academy-logo.svg">
+    </div>
+
+    <i class="fas fa-user-edit"></i>
+    <h1>INSCREVA-TE</h1> 
+    <form action="#">
+        <label>Academia a que se está a candidatar*</label><br>
+    <select name="acade" id="acade">
+      <div class="opcoes">
+        <option>----</option>
+        <option>SAP HCM Success Factors(17 de Maio 2021)</option>
+        <option>Software Development</option>
+        <option>Business Intelligence & Analytics(31 de Maio de 2021)</option>
+      </div>
+    </select> <br> <br>
+
+      
+      <label>Nome e Apelido*: </label><br>
+      <input type="text" id="fname" name="fname" placeholder="Nome e Apelido"><br> <br>
+      <label>Endereço de email*: </label> <br>
+      <input type="email" id="femail" name="femail" placeholder="Endereço de email"><br><br>
+      <label> Data de nascimento*: </label> <br>
+      <input type="date" id="fdata" name="fdata" placeholder="dd/mm/aaaa"
+        min="1950-01-01"
+        max="2002-01-01" ><br> <br>
+
+      <label>Habilitações Literarias* </label> <br>
+      <input type="checkbox" value="Ensino Secundário"> <label> Ensino Secundário</label><br>
+      <input type="checkbox"   value="Licenciatura"> <label> Licenciatura</label><br>
+      <input type="checkbox"   value="Mestrado"> <label> Mestrado</label><br>
+      <input type="checkbox"   value="Doutoramento"> <label> Doutoramento </label><br>
+      <input type="checkbox" value="Outro" > <label> Outro</label> <br> <br>
+        
+         
+
+      <label>Aréa de Formação* </label> <br>
+      <input type="checkbox"> <label> Ciências Sociais e Humanos</label><br>
+      <input type="checkbox"> <label> Ciências Empresariais</label><br>
+      <input type="checkbox"> <label> Gestão/Economia</label><br>
+      <input type="checkbox"> <label> Informática </label><br>
+      <input type="checkbox"> <label> Informática de Gestão</label><br>
+      <input type="checkbox"> <label> Engenharia e técnicas afins</label><br>
+      <input type="checkbox"> <label> Contabilidade/ Finanças</label><br>
+      <input type="checkbox"> <label> Saúde</label><br>
+      <input type="checkbox"> <label> Serviços Sociais</label><br>
+      <input type="checkbox"> <label> Outro</label><br> <br> 
+       
+
+        <label>Ano de conclusão: </label> <br>
+        <input type="date" id="fname" name="fname" placeholder="Ano de conclusão" ><br> <br>
+        <label> Motivo da minha candidatura: </label> <br>
+        <input type="text" id="fname" name="fname" max="2021-05-10" placeholder="Motivo da minha candidatura" ><br> <br>
+
+        <label>Como obteve conhecimento da nossa Academia?* </label> <br>
+        <input type="checkbox"> <label> Conheço alguém que faz parte do Grupo ID/ ITGEST</label><br>
+        <input type="checkbox"> <label> Redes Sociais (Facebook, instagram ou outro)</label><br>
+        <input type="checkbox"> <label> Linkedin</label><br>
+        <input type="checkbox"><label> Através da faculdade/universidade </label><br>
+        <input type="checkbox"><label for=""> Outro</label><br> <br>
+
+        <label>Upload de CV* </label> <br>
+        <input type="file" > <br> <br>
+        <label>Upload de Certificado de Habilitações* </label> <br>
+        <input type="file" > <br> <br>
+
+        <label>Deixa aqui as tuas dúvidas e esclarecimentos:</label> <br>
+        <textarea id="txt" name="txt"
+          rows="10" cols="40">
+            Deixa-nos aqui as tuas dúvidas/pedidos de esclarecimento
+        </textarea> <br> <br>
+
+        <input type="checkbox" >
+        <label> Dou o meu consentimento á ITGest para tratar dos meus dados pessoais tal como descrito na</label> <a href="#" target="_blank"> Política de Privacidade </a><br> <br> <br>
+    
+        <input type="submit" value="Enviar Inscrição">
+      </form> 
+  </body>
+
+  <footer>
+
+  </footer>
+</html>

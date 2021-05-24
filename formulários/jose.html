@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario</title>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>      
+        h1 {
+            color: #6e945a;
+        }
+        
+        
+        h2 {
+            color: #6e945a;
+        }
+
+        body {
+            background-image: url("http://wallpoper.com/images/00/38/76/81/minimalistic-grey_00387681.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        @media screen and (max-width: 992px) {
+          body {
+            font-size: 120%;
+          }
+        }
+
+        select {
+          border-radius: 6px;
+          background-color: #ceffb5;
+        }
+
+        input {
+          border-radius: 6px;
+          background-color: #ceffb5;
+        }
+
+        label { color: #c7b17e;
+
+        }
+
+        textarea {
+          border-radius: 8px;
+          background-color: #ceffb5;
+        }
+
+        #submitb{
+          border-radius: 8px;
+          margin-left: 20%;
+          height:50px;
+          width:200px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 120%;
+          background-color: #b9842a;
+          animation-name: colorb;
+          animation-duration: 10s;
+          animation-iteration-count: infinite;
+          text-align: center;
+        }
+        
+        @keyframes colorb {
+          0%   {background-color:#b9842a;}
+          25%  {background-color:#35260b;}
+          50%  {background-color:#b9842a;}
+          75%  {background-color:#35260b;}
+          100% {background-color:#b9842a;}
+        }
+
+        hr{
+          border: 3px solid #324232;
+          border-radius: 4px;
+          width: 50%;
+          margin-right: 50%;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img
+        src="https://academy.itgest.pt/wp-content/uploads/2021/03/trianglo-amarelo-8.png" 
+        width="50" 
+        height="50">
+    </div>
+
+    <h1>Inscreve-te</h1>
+    
+    <div>
+        
+        <label
+          for="curso">
+          Academia a que se está a candidatar*
+        </label>
+        <br>
+        <select id="curso" name="curso">
+          <option value="sap">SAP HCM Success Factors (17 de Maio 2021)</option>
+          <option value="dev" disabled>Software Development</option>
+          <option value="business">Business Intelligence & Analytics (31 de Maio de 2021)</option>
+        </select>
+
+        <br><br>
+        
+        <label
+            for="name">
+            Nome e Apelido*
+        </label>
+        <br>
+        <input
+            type="text" 
+            id="name" 
+            name="name" placeholder="Nome e Apelido">
+
+        <br>
+        <br>
+
+        <label
+            for="email">
+            Email* 
+        </label>
+        <br>
+        <input
+            type="email" 
+            id="email" 
+            name="email" placeholder="Email">
+
+        <br>
+        <br>
+
+        <label 
+            for="ndata">
+            Data de Nascimento*
+        </label>
+        <br>
+        <input
+            type="date" 
+            id="ndata" 
+            name="ndata"
+            max="2003-05-17">
+    </div>
+
+    <hr>
+
+    <div><h2>Habilitações Literárias*</h2>
+
+        <input
+            type="checkbox" 
+            id="es" 
+            name="es">
+
+        <label 
+            for="es"> 
+            Ensino Secundário
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="licenciatura" 
+            name="licenciatura">
+
+        <label 
+            for="licenciatura"> 
+            Licenciatura
+        </label>
+        
+        <br>
+
+        <input
+            type="checkbox" 
+            id="mestrado" 
+            name="mestrado">
+
+        <label 
+            for="mestrado"> 
+            Mestrado
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="doutoramento" 
+            name="doutoramento">
+
+        <label 
+            for="doutoramento"> 
+            Doutoramento
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="outro" 
+            name="outro">
+
+        <label 
+            for="outro"> 
+            Outro
+        </label>
+    </div>
+    
+    <hr>
+
+    <div><h2>Área de Formação*</h2>
+
+        <input
+            type="checkbox" 
+            id="csh" 
+            name="csh">
+
+        <label 
+            for="csh"> 
+            Ciências Sociais e Humanos
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="ciencias-empresariais" 
+            name="ciencias-empresariais">
+
+        <label 
+            for="ciencias-empresariais"> 
+            Ciências Empresariais
+        </label>
+        
+        <br>
+
+        <input
+            type="checkbox" 
+            id="ge" 
+            name="ge">
+
+        <label 
+            for="ge"> 
+            Gestão/ Economia
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="informatica" 
+            name="informatica">
+
+        <label 
+            for="informatica"> 
+            Informática
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="ig" 
+            name="ig">
+
+        <label 
+            for="ig"> 
+            Informática de Gestão
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="et" 
+            name="et">
+
+        <label 
+            for="et"> 
+            Engenharia e técnicas afins
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="cf" 
+            name="cf">
+
+        <label 
+            for="cf"> 
+            Contabilidade/ Finanças
+        </label>
+        
+        <br>
+
+        <input
+            type="checkbox" 
+            id="saude" 
+            name="saude">
+
+        <label 
+            for="saude"> 
+            Saúde
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="servicos-sociais" 
+            name="servicos-sociais">
+
+        <label 
+            for="servicos-sociais"> 
+            Serviços Sociais
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="outro" 
+            name="outro">
+
+        <label 
+            for="outro"> 
+            Outro
+        </label>
+    </div>
+
+    <br><br>
+
+    <div>
+        <label
+            for="ano-de-conclusao">
+            Ano de Conclusão*
+        </label>
+        <br>
+        <input
+            type="month" 
+            id="ano-de-conclusao" 
+            name="ano-de-conclusao" placeholder="Ano de Conclusão">
+
+        <br><br>
+
+        <label
+            for="motivo-da-candidatura">
+            Motivo da Candidatura*
+        </label>
+        <br>
+        <input
+            type="text" 
+            id="motivo-da-candidatura" 
+            name="motivo-da-candidatura" placeholder="Motivo da Candidatura">
+    </div>
+
+    <hr>
+    
+    <div><h2>Como obteve conhecimento da nossa Academia?*</h2>
+
+        <input
+            type="checkbox" 
+            id="motivo1" 
+            name="motivo1">
+
+        <label 
+            for="motivo1"> 
+            Conheço alguém que faz parte do Grupo ID/ ITGEST
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="motivo2" 
+            name="motivo2">
+
+        <label 
+            for="motivo2"> 
+            Redes Sociais (Facebook, instagram ou outro)
+        </label>
+        
+        <br>
+
+        <input
+            type="checkbox" 
+            id="motivo3" 
+            name="motivo3">
+
+        <label 
+            for="motivo3"> 
+            Linkedin
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="motivo4" 
+            name="motivo4">
+
+        <label 
+            for="motivo4"> 
+            Através da faculdade/universidade
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox" 
+            id="motivo15" 
+            name="motivo5">
+
+        <label 
+            for="motivo5"> 
+            Outro
+        </label>
+    </div>
+
+    <hr>
+
+    <div><h2>Uploads*</h2>
+        <label
+            for="uploadcv">
+            Upload de CV*
+        </label>
+        <br>
+        <input
+            type="file" 
+            id="uploadcv" 
+            name="uploadcv">
+
+        <br>
+        <br>
+
+
+        <label
+            for="uploadch">
+            Upload de Certificado de Habilitações*
+        </label>
+        <br>
+        <input
+            type="file" 
+            id="uploadch" 
+            name="uploadch">
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>Dúvidas</h2>
+        <label 
+            for="duvidas">
+            Deixa aqui as tuas dúvidas e esclarecimentos.
+        </label>
+        <br>
+        <textarea name="duvidas" cols="70" rows="10" placeholder="Deixa-nos aqui as tuas dúvidas/ pedidos de esclarecimento"></textarea>
+    </div>
+
+    <hr>
+
+    <div>
+        
+        <input
+            type="checkbox" 
+            id="consentimento" 
+            name="consentimento">
+
+        <label 
+            for="consentimento"> 
+            Dou o meu consentimento á ITGest para tratar dos meus dados pessoais tal como descrito na <a target=“_blank” href="https://academy.itgest.pt/politica-de-privacidade/">Política de Privacidade</a>
+        </label>
+
+    </div>
+
+    <br>
+
+    <div>
+        <button class=buttons:hover id= submitb
+            type="button"
+            onclick="console.log('Enviar Inscrição');">
+            <i class="far fa-paper-plane"></i>  Enviar
+        </button>
+
+        <button class="jose" id="jose2"
+            type="button"
+            onclick="console.log('Enviar Inscrição');">
+            <i class="far fa-paper-plane"></i>  Enviar
+        </button>
+    </div>
+
+    <br><br>
+
+  </body>
+</html>
